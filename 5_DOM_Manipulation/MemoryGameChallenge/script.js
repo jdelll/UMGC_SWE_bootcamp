@@ -1,11 +1,6 @@
 const gameContainer = document.getElementById("game");
 let score = 0;
 document.querySelector('#highscore').innerText=localStorage.getItem('highscore');
-// let numClicks = 0;
-// let cardOne = "";
-// let cardTwo = "";
-// let cardOneColor = "";
-// let cardTwoColor = "";
 
 const COLORS = [
   "red",
@@ -117,46 +112,6 @@ function handleCardClick(event) {
   },1000)
 }  
 
-// function updateCards(){
-//   const cards = document.querySelectorAll('div');
-//     for(let card of cards){
-//       if(card.getAttribute('id')==='faceup'){
-//         card.style.backgroundColor = card.getAttribute('class');
-//       }
-//       else{
-//         card.style.backgroundColor = 'white';
-//       }
-//     }
-// }
-  // numClicks++;
-  // if(numClicks === 1){
-  //   let cardOne = event.target;
-  //   cardOneColor = cardOne.getAttribute('class');
-  //   cardOne.style.backgroundColor = cardOneColor;
-  //   cardOne.classList.add('faceup');
-    
-  // }
-  
-  // else if(numClicks === 2){
-  //   let cardTwo = event.target;
-  //   if(cardOne != cardTwo){
-  //     cardTwoColor = cardTwo.getAttribute('class');
-  //     cardTwo.style.backgroundColor = cardTwoColor;
-  //     setTimeout(function(cardOneColor,cardTwoColor,cardOne,cardTwo,numClicks){
-  //      if(cardOneColor != cardTwoColor){
-  //         cardOne.style.backgroundColor = 'white';
-  //         cardTwo.style.backgroundColor = 'white';
-  //       }
-  //       else{
-
-  //       }
-  //       numClicks = 0;
-  //     },1000)
-  //   }
-  //   else{
-  //     numClicks--;
-  //   }
-  // }
 
 // when the DOM loads
 createDivsForColors(shuffledColors);
