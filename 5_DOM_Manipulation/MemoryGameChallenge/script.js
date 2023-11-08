@@ -80,7 +80,7 @@ updateCards = function(){
 function handleCardClick(event) {
   // you can use event.target to see which element was clicked
  
-  if(document.querySelectorAll('#guess').length < 2){
+  if(document.querySelectorAll('#guess').length < 2 && event.target.getAttribute('id')!='match'){
     event.target.setAttribute('id','guess');
   }
 
