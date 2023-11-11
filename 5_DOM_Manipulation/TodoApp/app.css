@@ -1,0 +1,9 @@
+.urgent{
+    color: purple;
+    font-weight: bold;
+}
+
+.complete{
+    color: gray;
+    text-decoration: line-through;
+}
