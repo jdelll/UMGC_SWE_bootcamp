@@ -1,0 +1,20 @@
+## **Part I**
+
+Answer the following questions:
+
+- What ***git*** command creates a branch?
+git branch "branch name"
+
+- What is the difference between a fast-forward and recursive merge?
+Fast-forward merge is when the branch to be merged has the same commits as main/master + more
+Recursive merge is when the branch to be merged has different commits as main/master
+
+- What ***git*** command changes to another branch?
+git checkout "branch name"
+
+- What ***git*** command deletes a branch?
+git branch -d "branch name"
+
+
+- How do merge conflicts happen?
+Merge conflicts happen when changes are commited to the same file from two different branches
