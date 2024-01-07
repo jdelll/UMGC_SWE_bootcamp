@@ -64,7 +64,13 @@ function highlight(e){
 //when user clicks on search result, resets suggestionsList to empty and populates search bar with clicked result
 function useSuggestion(e) {
 	document.querySelector('#suggestionsList').innerHTML="";
-	input.value = e.target.innerText;
+	if(e.target.tagName === ("SPAN"))
+	{
+		input.value = e.target.parentNode.getAttribute('id');
+	}
+	else{
+		input.value = e.target.getAttribute('id');
+	}
 }
 
 //updates results with each key up
