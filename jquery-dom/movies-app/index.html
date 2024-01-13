@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+            
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+            
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+<form class="movie-form">
+    <input class="movie-title" type="text" placeholder="Movie title">
+    <input class="movie-rating" type="number" min="0" max="10" placeholder="Rating">
+    <button class="movie-button">Add to movie ratings list</button>
+</form>
+
+<table class="movie-table">
+    <tr>
+        <th>Movie</th>
+        <th>Rating</th>
+        <th>Remove</th>
+    </tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./app.js"></script>
+</body>
+
+</html>
