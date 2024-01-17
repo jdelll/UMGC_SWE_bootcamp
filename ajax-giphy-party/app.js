@@ -5,17 +5,21 @@ const removeButton = document.querySelector("#removeButton");
 const gifSearch = document.querySelector('#gifSearch');
 const gifContainer = document.querySelector('#gifContainer')
 
-const url = 'https://api.giphy.com/v1/gifs/search';
-const api_key = 'LPL40C8PtnSyqh6ADHCyimCfUg2mjZ7y';
+const url = 'http://api.giphy.com/v1/gifs/search';
+const api_key = 'M3a4EXWzuWJqnnChOXCRRWVCXI1fn9VP';
+const limit = 1;
 
 async function getGif(q){
-    const res = await axios.get(url, {
-        headers: {
-            'api_key': api_key,
-            'q': q
+    //const res = await axios.get(`http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q={q}&limit=1`);
+    const res = await axios.get('http://api.giphy.com/v1/gifs/search', {
+        params: {
+            q,
+            api_key,
+            limit
         }
     });
-    addGif(res.data);
+    
+    addGif(res.data.data[0].images.fixed_height.url);
 }
 
 function addGif(url){
