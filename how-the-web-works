@@ -1,0 +1,28 @@
+## **Part One: Solidify Terminology**
+
+In your own terms, define the following terms:
+
+- What is HTTP? 
+HTTP is a protocol for communication between clients and servers on the internet.  others include https and ftp
+- What is a URL? 
+URL is a set of instructions to access a resource on the internet including the protocol, host name (nickname for server), port #, specific resource, and query which includes any other variables or parameters needed 
+- What is DNS?
+DNS = domain name system.  Phonebook for the web, translates hostname into IP address and vice versa
+- What is a query string?
+Element of a URL that provides additional information to server
+- What are two HTTP verbs and how are they different?
+GET: get requests a resource from a server without changing server data
+POST: typically sends arguments to a server to change server data
+- What is an HTTP request?
+Communication between web browser and server. Composed of method (get, post), url, protocol, headers. For example, every external image/file/script loaded on a web page is requested separately and compiled by browser
+- What is an HTTP response?
+Response to a request.  Composed of protocol (almost always 1.1), code, and headers.  Response code includes information about success/failure of request.
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+content-type
+language
+Additional information passed with an HTTP request.
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+The URL is parsed using the protocol (http), site (somesite.com) and resource (/some/page.html)
+Browser requests DNS server or local cache for IP address
+
+
