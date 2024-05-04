@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block title%} Greeter form v2 {%endblock%}
+
+{%block content%}
+<h1>Your lucky number is: {{lucky_num}}</h1>
+    <p>{{msg}}</p>
+    {%if lucky_num==3:%}
+        <h2>{{lucky_num}} is my lucky number too!</h2>
+        <img src="https://www.springboard.com/assets/images/new-springboard-logo-dark@2x.png">
+    {%else%}
+    <h2>{{lucky_num}} is not my lucky number.</h2>
+    {%endif%}
+{%endblock%}
