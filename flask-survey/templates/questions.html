@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} {{survey.title}} {% endblock %}
+
+{% block content %}
+    <h1>{{survey.title}}</h1>
+    <h2></h2>
+
+    <ul>
+        <li>{{survey.questions[q_num].question}}</li>
+    </ul>
+
+    <form action="/answer" method="POST">
+        {%for choice in survey.questions[q_num].choices%}
+        <input type = "radio" value = "{{choice}}" name = "answer"><div>{{choice}}</div>
+        {%endfor%}
+        <button>Submit answer</button>
+    </form>
+
+{% endblock %}
